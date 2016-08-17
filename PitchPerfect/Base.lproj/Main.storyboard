@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Play Sound View Controller-->
+        <!--Play Sounds View Controller-->
         <scene sceneID="2ig-0L-6B9">
             <objects>
-                <viewController id="ioW-sv-IP3" customClass="PlaySoundViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ioW-sv-IP3" customClass="PlaySoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7vh-zX-RHw"/>
                         <viewControllerLayoutGuide type="bottom" id="b0i-A3-F0P"/>
@@ -26,16 +26,16 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTW-DZ-L3a">
                                                 <rect key="frame" x="0.0" y="0.0" width="280" height="134"/>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="A"/>
                                                 <connections>
-                                                    <action selector="playSoundForButton:" destination="ioW-sv-IP3" eventType="touchUpInside" id="2wg-6u-pPu"/>
+                                                    <action selector="playSoundForButton:" destination="ioW-sv-IP3" eventType="touchUpInside" id="gTb-CN-YlM"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xjh-RL-k10">
                                                 <rect key="frame" x="280" y="0.0" width="280" height="134"/>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="B"/>
                                                 <connections>
-                                                    <action selector="playSoundForButton:" destination="ioW-sv-IP3" eventType="touchUpInside" id="66u-sr-hbB"/>
+                                                    <action selector="playSoundForButton:" destination="ioW-sv-IP3" eventType="touchUpInside" id="ta8-da-7cH"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -45,16 +45,16 @@
                                         <subviews>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lso-yT-5RQ">
                                                 <rect key="frame" x="0.0" y="0.0" width="280" height="134"/>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="C"/>
                                                 <connections>
-                                                    <action selector="playSoundForButton:" destination="ioW-sv-IP3" eventType="touchUpInside" id="pGG-GS-f28"/>
+                                                    <action selector="playSoundForButton:" destination="ioW-sv-IP3" eventType="touchUpInside" id="KyY-Z7-eEe"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fcz-1Y-a3V">
                                                 <rect key="frame" x="280" y="0.0" width="280" height="134"/>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="D"/>
                                                 <connections>
-                                                    <action selector="playSoundForButton:" destination="ioW-sv-IP3" eventType="touchUpInside" id="0aD-zv-AzJ"/>
+                                                    <action selector="playSoundForButton:" destination="ioW-sv-IP3" eventType="touchUpInside" id="6Se-GK-3PS"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -66,14 +66,14 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="280" height="134"/>
                                                 <state key="normal" image="snailButton"/>
                                                 <connections>
-                                                    <action selector="playSoundForButton:" destination="ioW-sv-IP3" eventType="touchUpInside" id="3aQ-Sb-c3k"/>
+                                                    <action selector="playSoundForButton:" destination="ioW-sv-IP3" eventType="touchUpInside" id="G42-Zd-Z9Q"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gso-5G-75R" userLabel="RabbitButton">
                                                 <rect key="frame" x="280" y="0.0" width="280" height="134"/>
                                                 <state key="normal" image="rabbitButton"/>
                                                 <connections>
-                                                    <action selector="playSoundForButton:" destination="ioW-sv-IP3" eventType="touchUpInside" id="1nP-Td-EB2"/>
+                                                    <action selector="playSoundForButton:" destination="ioW-sv-IP3" eventType="touchUpInside" id="2Bg-h3-GcZ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -88,7 +88,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="560" height="134"/>
                                                         <state key="normal" title="Stop"/>
                                                         <connections>
-                                                            <action selector="stopPlaySoundButton:" destination="ioW-sv-IP3" eventType="touchUpInside" id="gQE-P6-eQ7"/>
+                                                            <action selector="stopPlaySoundButton:" destination="ioW-sv-IP3" eventType="touchUpInside" id="1vV-5g-5jY"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -107,13 +107,13 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="aButton" destination="xTW-DZ-L3a" id="aB3-tu-cJa"/>
-                        <outlet property="bButton" destination="Xjh-RL-k10" id="Xu0-rN-VeS"/>
-                        <outlet property="cButton" destination="lso-yT-5RQ" id="DMU-MU-DsN"/>
-                        <outlet property="dButton" destination="Fcz-1Y-a3V" id="xY7-x9-BWh"/>
-                        <outlet property="rabbitButton" destination="gso-5G-75R" id="Uu3-61-983"/>
-                        <outlet property="snailButton" destination="chO-oN-LgV" id="ZB9-SY-AjY"/>
-                        <outlet property="stopButton" destination="O56-1A-G0J" id="uty-iy-adI"/>
+                        <outlet property="chipmunkButton" destination="xTW-DZ-L3a" id="W3U-tC-Cb1"/>
+                        <outlet property="echoButton" destination="Xjh-RL-k10" id="0yP-hI-lQ8"/>
+                        <outlet property="rabbitButton" destination="gso-5G-75R" id="heG-N5-M3O"/>
+                        <outlet property="reverbButton" destination="lso-yT-5RQ" id="n1x-6d-0hz"/>
+                        <outlet property="snailButton" destination="chO-oN-LgV" id="as0-mc-shS"/>
+                        <outlet property="stopButton" destination="O56-1A-G0J" id="cYf-V6-rhA"/>
+                        <outlet property="vaderButton" destination="Fcz-1Y-a3V" id="lBB-On-USN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tUe-lU-a1l" userLabel="First Responder" sceneMemberID="firstResponder"/>
